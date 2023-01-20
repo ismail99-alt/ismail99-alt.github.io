@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Form | Grants</title>
+  
+  <style type="text/css">
+    small{
+      color: red;
+      font-size: 17px;
+    }
+  </style>
+  
+</head>
+
+<body>
+<section class="small-banner">
+  <img src="images/567.jpg">
+</section>
+  <section class="apply">
+   
+  <form action="process.html" method="GET">
+    
+  <div class="p-2">
+    <div class="card-header">
+      <h4 class="form-head">Apply for grants now</h4>
+    </div>
+    
+    <div class="card-body">
+      
+  <div class="form-group mb-3">
+    <label for="name" class="form-label">Full Name: <small>*</small></label>
+    <input type="text" class="form-control" placeholder="Enter your Full Name" name="full_name" required>
+  </div>
+  
+  <div class="form-group mb-3">
+    <label for="address" class="form-label">Address: <small>*</small></label>
+    <input type="text" class="form-control" placeholder="Enter your Address" name="address" required>
+  </div>
+  
+  <div class="form-group mb-3">
+    <label for="phone" class="form-label">Phone: <small>*</small></label>
+    <input type="tel" class="form-control" placeholder="Enter your phone number" name="phone" required>
+  </div>
+  
+  <div class="form-group mb-3">
+    <label for="email" class="form-label">Email: <small>*</small></label>
+    <input type="email" class="form-control" placeholder="Enter your Email" name="email" required>
+  </div>
+  
+  <div class="form-group mb-3">
+    <label for="state" class="form-label">State: <small>*</small></label>
+    <select class="form-select" name="state" required>
+      <option value="" selected disabled>Select State</option>
+      <option value="kd">Kaduna State</option>
+    </select>
+  </div>
+  
+  <div class="form-group mb-3">
+    <label for="lga">Local Govt: <small>*</small></label>
+    <select class="form-select" name="lga" required>
+      <option value="" selected disabled>LGA</option>
+      <option value="kds">Kaduna South</option>
+      <option value="kdn">Kaduna North</option>
+      <option value="zar">Zaria</option>
+      <option value="chk">Chikun</option>
+      <option value="lere">Lere</option>
+      <option value="giwa">Giwa</option>
+    </select>
+  </div>
+  
+  <div class="form-group mb-3">
+    <label for="level">Grants category: <small>*</small></label>
+    <select class="form-select" name="grants" multiple required>
+      <option value="" selected hidden>Select</option>
+      <option value="allowance">Transport Allowances</option>
+      <option value="allowance" disabled>Monthly Stipend</option>
+      <option value="laptops" disabled>Laptop Grant for student</option>
+      <option value="data">Data and Airtime Allowances</option>
+    </select>
+  </div>
+  
+  <div class="form-group mb-3">
+  <input type="checkbox" class="form-check-input" required>
+    <label class="form-check-label">Check this Box to serve as your signature</label>
+  </div>
+  
+  <div class="form-group mb-3">
+    
+  <button type="submit" class="btn btn-primary">Submit</button>
+  <a class="btn btn-danger" href="index.html">Back to Home</a>
+  
+  </div>
+  
+    </div>
+    
+  <!---  <div class="card-footer">
+      <h5>Application successful waiting for verification</h5>
+    </div> --->
+    
+  </div>
+</form>
+
+</section>
+</body>
+
+</html>

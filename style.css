@@ -1,0 +1,217 @@
+header{
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/background.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.banner-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.logo{
+  font-family: fantasy;
+}
+.nav-link{
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
+.navbar-info{
+    background: #d35400;
+  }
+
+.banner-text h3{
+  color: #fff;
+  font-family: courier;
+}
+.banner-text p{
+  color: #fff;
+  font-weight: 400;
+  font-family: fantasy;
+}
+.banner-btn a{
+  border: 1px solid #fff;
+  border-radius: 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 50px;
+  margin-top: 15px;
+  display: inline-block;
+  color: #fff;
+  transition: .9s;
+}
+.banner-btn a:hover{
+  background: #e67e22;
+  border: #e67e22;
+  color: #fff;
+}
+.text-area{
+  font-size: 70px;
+  font-weight: bold;
+}
+.text-area span{
+  color: #e67e22;
+  opacity: 0;
+  transform: translate(0, -100px) rotate(360deg) scale(0);
+  animation: animate 5s forwards;
+}
+.text-area span{
+  display: inline-block;
+}
+.text-area span:nth-of-type(2){
+  animation-delay: .1s;
+}
+.text-area span:nth-of-type(3){
+  animation-delay: .2s;
+}
+.text-area span:nth-of-type(4){
+  animation-delay: .3s;
+}
+.text-area span:nth-of-type(5){
+  animation-delay: .4s;
+}
+.text-area span:nth-of-type(6){
+  animation-delay: .5s;
+}
+.text-area span:nth-of-type(7){
+  animation-delay: .6s;
+}
+.text-area span:nth-of-type(8){
+  animation-delay: .7s;
+}
+@keyframes animate{
+  30%{
+    transform: translate(0, -50px) rotate(180deg) scale(1);
+  }
+  60%{
+    transform: translate(0, 20px) rotate(0deg) scale(.8);
+}
+100%{
+    transform: translate(0) rotate(0deg) scale(1);
+    opacity: 1;
+}
+}
+
+@media (max-width: 600px){
+  .banner-text p{
+    font-style: 20px;
+  }
+  .text-area{
+    font-size: 30px;
+  }
+  .navbar-info{
+    background: #d35400;
+  }
+}
+
+/* ---------- offers --------- */
+.offers{
+  width: 100%;
+  padding: 4% 0;
+}
+
+.grants{
+  padding: 4% 0;
+}
+.bg-gray{
+  background: #f1f2f9;
+}
+.border-info{
+  border: 1px solid blue;
+  border-radius: 4px;
+}
+
+.about{
+  width: 100%;
+  padding: 4%;
+  box-sizing: border-box;
+}
+.about .abt-name{
+  font-family: fantasy;
+}
+.about img{
+  width: 240px;
+  height: 300px;
+}
+.lead{
+  font-weight: 600;
+}
+
+/* ----- application page css --------*/
+
+.small-banner img{
+  width: 100vw;
+}
+
+.apply{
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),url(images/background2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-size: cover;
+}
+.apply{
+  padding: 6%;
+}
+.application{
+  padding: 10px;
+}
+.form-head{
+  font-variant: small-caps;
+  font-family: fantasy;
+  font-weight: 600;
+  color: red;
+}
+
+.more-links{
+  text-decoration: none;
+  color: #d35400;
+  font-variant: small-caps;
+  font-weight: bold;
+}
+.more-links:hover{
+  text-decoration: underline;
+}
+
+
+.contact{
+  padding: 4%;
+}
+.footer-img{
+  height: 340px;
+  margin-left: 70%;
+}
+
+@media (max-width: 600px){
+  .footer-img{
+    display: none;
+  }
+}
+
+.social .fa{
+  font-size: 20px;
+  color: #d35400;
+  margin: 0 10px;
+}
+.footer{
+  background: #d35400;
+  padding: 1%;
+}
+.form-contact{
+  border: 1px solid #d35400;
+}
+
+label{
+  font-weight: bolder;
+  color: #fff;
+}
+
+
+/* ---- agendas page custom css ----*/
+.agd-head-text{
+  text-transform: uppercase;
+  color: #d35400;
+}
